@@ -1,0 +1,7 @@
+/etc/
+/log/
+/logs-nginx/
+/logs-php7/
+/ssl/
+
+/html/vendor/

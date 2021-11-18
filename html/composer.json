@@ -1,0 +1,9 @@
+{
+    "name": "leekesler/docker-lnp",
+    "authors": [
+        {
+            "name": "Noah Alex"
+        }
+    ],
+    "require": {}
+}

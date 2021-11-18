@@ -1,0 +1,21 @@
+version: '3.5'
+
+services:
+  web:
+    image: docker-lnp
+    container_name: web
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    environment:
+      - DOMAIN=localhost
+      - DOCUMENT_ROOT=/public
+    volumes:
+      # development directory
+      - ./html/:/var/www/html/
+      # expose nginx logs to host
+      - ./logs-nginx/:/var/log/nginx/
+      # expose php logs to host
+      - ./logs-php7/:/etc/php7/var/log/
