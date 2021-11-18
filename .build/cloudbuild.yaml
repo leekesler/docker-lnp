@@ -1,0 +1,5 @@
+options:
+  machineType: 'N1_HIGHCPU_8'
+steps:
+  # template cloudbuild yaml file
+  - id:      build
